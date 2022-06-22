@@ -12,5 +12,3 @@ total = pãesvendidos + broasvendidas;
 poupança = total / 10
 console.log("O valor a ser guardado na poupança é de " + poupança + " reais.")
  */
-
-
