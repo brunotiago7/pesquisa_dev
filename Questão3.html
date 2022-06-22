@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunoquestão3</title>
+    <style>
+        #pão{
+            width: 300px;
+        }
+        #broa{
+            width: 300px;
+        }
+        #valores{
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questão 3</h1>
+    <h2>Calculando o valor arrecadado com as vendas de pães e broas, e por fim, o valor que deve ser depositado na poupança (10% do valor total arrecadado)</h2>
+    <input type="text"name="pão" id="pão" placeholder="Informe o número de pâes vendidos">
+    <input type="text"name="broa" id="broa" placeholder="Informe o número de broas vendidas">
+    <button onclick="valor_arrecadado()">Calcular<button>
+    <input type="text" name="valores" id="valores">
+</body>
+<script>
+    function valor_arrecadado(){
+        var pães = document.getElementById('pão').value;
+        var broas = document.getElementById('broa').value;
+        var pães_vendidos = pães * 0.12;
+        var broas_vendidas = broas * 1.5;
+        var total_arrecadado = pães_vendidos + broas_vendidas;
+        var poupança = total_arrecadado / 10;
+        console.log("O valor total arrecado com as vendas dos pães e broas foi de R$"+total_arrecadado+" e o saldo que deve ser depositado dessa quantia é de R$"+poupança+"");
+        document.getElementById('valores').value = "O valor total arrecado com as vendas dos pães e broas foi de R$"+total_arrecadado+" e o saldo que deve ser depositado dessa quantia é de R$"+poupança+""
+    }
+</script>
+</html>
